@@ -3,6 +3,9 @@ sudo -v
 cd ~
 git clone --recursive https://github.com/merooney/dotfiles.git
 
+#updateDB
+sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
+
 #Install Applications not from HomeBrew
 TEMPDIR=Temp
 temp=$TEMPDIR$(uuidgen)
