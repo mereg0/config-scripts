@@ -31,3 +31,10 @@ stow git
 stow neovim
 stow zsh
 stow antigen
+
+#Make ZSH default shell
+echo /usr/local/bin/zsh >> /etc/shells
+chsh -s /usr/local/bin/zsh
+
+#Reminder on how to load neovim plugins
+echo Execute :PlugInstall within neovim
