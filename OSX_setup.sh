@@ -19,6 +19,7 @@ rm -r $temp
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew tap caskroom/cask
 brew install Caskroom/cask/java
+brew cask install iterm
 brew install autoconf automake cmake ctags gdbm gettext git glib gnupg \
 htop-osx httpie iftop irssi libevent libffi libtool maven mtr mysql neovim/neovim/neovim nmap node \
 openssl pcre pkg-config postgresql pyqt python qt readline reattach-to-user-namespace \
