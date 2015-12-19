@@ -2,6 +2,8 @@ sudo -v
 
 cd ~
 git clone --recursive https://github.com/merooney/dotfiles.git
+#.gitignore is in GNU Stow's ignorelist
+cp ~/dotfiles/git/.gitignore ~/.gitignore
 
 #updateDB
 sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
@@ -42,5 +44,7 @@ su mrooney
 chsh -s /usr/local/bin/zsh
 
 #Reminder on how to load neovim plugins
+sudo pip2 install neovim
 echo Execute :PlugInstall within neovim
-echo then install youcompleteme
+echo then \'cd ~/.local/share/nvim/site/plugged/YouCompleteMe\'
+echo then \'./install.py --clang-completer"\'
