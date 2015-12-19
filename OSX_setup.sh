@@ -33,7 +33,9 @@ stow zsh
 stow antigen
 
 #Make ZSH default shell
+sudo su root
 echo /usr/local/bin/zsh >> /etc/shells
+su mrooney
 chsh -s /usr/local/bin/zsh
 
 #Reminder on how to load neovim plugins
