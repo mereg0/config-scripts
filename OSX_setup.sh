@@ -38,3 +38,4 @@ chsh -s /usr/local/bin/zsh
 
 #Reminder on how to load neovim plugins
 echo Execute :PlugInstall within neovim
+echo then install youcompleteme
