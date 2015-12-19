@@ -23,3 +23,9 @@ brew install autoconf automake cmake ctags gdbm gettext git glib gnupg \
 htop-osx httpie iftop irssi libevent libffi libtool maven mtr mysql neovim/neovim/neovim nmap node \
 openssl pcre pkg-config postgresql pyqt python qt readline reattach-to-user-namespace \
 sip sqlite stow the_silver_searcher tree wemux xz zeromq zsh zsh-completions
+
+#Symlink all config files using GNU Stow
+cd ~/dotfiles
+stow git
+stow neovim
+stow zsh
