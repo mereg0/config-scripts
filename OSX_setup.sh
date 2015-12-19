@@ -29,3 +29,4 @@ cd ~/dotfiles
 stow git
 stow neovim
 stow zsh
+stow antigen
