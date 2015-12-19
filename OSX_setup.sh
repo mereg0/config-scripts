@@ -1,7 +1,7 @@
 sudo -v
 
 cd ~
-git clone https://github.com/merooney/dotfiles.git
+git clone --recursive https://github.com/merooney/dotfiles.git
 
 #Install Applications not from HomeBrew
 TEMPDIR=Temp
