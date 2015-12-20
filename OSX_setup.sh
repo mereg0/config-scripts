@@ -25,6 +25,8 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew tap caskroom/cask
 brew install Caskroom/cask/java
 brew cask install iterm2
+#Refresh sudo
+sudo -v
 brew install autoconf automake cmake ctags gdbm gettext git glib gnupg \
 htop-osx httpie iftop irssi libevent libffi libtool maven mtr mysql neovim/neovim/neovim nmap node \
 openssl pcre pkg-config postgresql pyqt python qt readline reattach-to-user-namespace \
@@ -43,8 +45,9 @@ echo /usr/local/bin/zsh >> /etc/shells
 su mrooney
 chsh -s /usr/local/bin/zsh
 
-#Reminder on how to load neovim plugins
 sudo pip2 install neovim
+#Reminder on how to load neovim plugins
+#As of last check, neovim didn't support cmdline invocation for plugin loading
 echo Execute :PlugInstall within neovim
 echo then \'cd ~/.local/share/nvim/site/plugged/YouCompleteMe\'
 echo then \'./install.py --clang-completer"\'
